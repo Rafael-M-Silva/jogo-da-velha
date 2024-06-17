@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header .container-placar {
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header .container-placar .placar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header .container-placar .placar .jogador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .game {
+    max-width: 310px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: auto;
+    background: #000;
+}
+
+main .game .square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 4rem;
+    transition: .3s;
+}
+
+main .game .square p {
+    opacity: 0;
+}
+
+main .game .square:hover {
+    background: #e1e1e1;
+}
+
+main .game .square:hover p {
+    opacity: .2;
+}
+
+footer {
+    padding: 10px;
+}
+
+footer p {
+    text-align: center;
+}
